@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "./styles/reset.css";
+import "../app/Styles/reset.css";
 import { Headers } from "./Component/headers";
 import { Footer } from "./Component/footer";
 
@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/assets/favicons/favicon.ico" />
-       
+      
       </head>     
  
   
