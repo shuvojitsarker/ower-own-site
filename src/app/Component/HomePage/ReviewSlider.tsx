@@ -1,0 +1,62 @@
+
+import Image from 'next/image';
+import ameliaJosephLogo from "../../../../public/assets/img/review-section/amelia-joseph_logo.png";
+
+export const ReviewSlider = () => {
+    return (
+        <section data-aos="zoom-out-right" className="review-slider">
+        <div className="container">
+        <div className="review-slider__container">
+            <div className="review-slider__top">
+            <div className="review-slider__top-heading">
+                <h2 className="review-slider__top-heading__txt">What Our Client Said about us</h2>
+            </div>
+            <div className="review-slider__top-els-btns">
+                <div className="review-slider__top-els-btn-left">
+                <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M36.7497 24.5001C36.7497 24.9062 36.5884 25.2957 36.3013 25.5829C36.0141 25.87 35.6246 26.0314 35.2185 26.0314H17.4774L24.0526 32.6035C24.195 32.7458 24.3079 32.9149 24.385 33.1009C24.462 33.2869 24.5017 33.4863 24.5017 33.6876C24.5017 33.8889 24.462 34.0883 24.385 34.2743C24.3079 34.4603 24.195 34.6294 24.0526 34.7717C23.9103 34.9141 23.7412 35.027 23.5552 35.1041C23.3692 35.1811 23.1698 35.2208 22.9685 35.2208C22.7672 35.2208 22.5678 35.1811 22.3818 35.1041C22.1958 35.027 22.0267 34.9141 21.8844 34.7717L12.6969 25.5842C12.5543 25.442 12.4411 25.273 12.3639 25.087C12.2867 24.9009 12.247 24.7015 12.247 24.5001C12.247 24.2987 12.2867 24.0993 12.3639 23.9132C12.4411 23.7272 12.5543 23.5582 12.6969 23.416L21.8844 14.2285C22.1719 13.941 22.5619 13.7794 22.9685 13.7794C23.3751 13.7794 23.7651 13.941 24.0526 14.2285C24.3401 14.516 24.5017 14.906 24.5017 15.3126C24.5017 15.7192 24.3401 16.1092 24.0526 16.3967L17.4774 22.9689H35.2185C35.6246 22.9689 36.0141 23.1302 36.3013 23.4173C36.5884 23.7045 36.7497 24.094 36.7497 24.5001Z" fill="black" fillOpacity="0.3"/>
+                    </svg>
+                </div>
+                <div className="review-slider__top-els-btn-right">
+                <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M36.7497 24.5001C36.7497 24.9062 36.5884 25.2957 36.3013 25.5829C36.0141 25.87 35.6246 26.0314 35.2185 26.0314H17.4774L24.0526 32.6035C24.195 32.7458 24.3079 32.9149 24.385 33.1009C24.462 33.2869 24.5017 33.4863 24.5017 33.6876C24.5017 33.8889 24.462 34.0883 24.385 34.2743C24.3079 34.4603 24.195 34.6294 24.0526 34.7717C23.9103 34.9141 23.7412 35.027 23.5552 35.1041C23.3692 35.1811 23.1698 35.2208 22.9685 35.2208C22.7672 35.2208 22.5678 35.1811 22.3818 35.1041C22.1958 35.027 22.0267 34.9141 21.8844 34.7717L12.6969 25.5842C12.5543 25.442 12.4411 25.273 12.3639 25.087C12.2867 24.9009 12.247 24.7015 12.247 24.5001C12.247 24.2987 12.2867 24.0993 12.3639 23.9132C12.4411 23.7272 12.5543 23.5582 12.6969 23.416L21.8844 14.2285C22.1719 13.941 22.5619 13.7794 22.9685 13.7794C23.3751 13.7794 23.7651 13.941 24.0526 14.2285C24.3401 14.516 24.5017 14.906 24.5017 15.3126C24.5017 15.7192 24.3401 16.1092 24.0526 16.3967L17.4774 22.9689H35.2185C35.6246 22.9689 36.0141 23.1302 36.3013 23.4173C36.5884 23.7045 36.7497 24.094 36.7497 24.5001Z" fill="black" fillOpacity="0.3"/>
+                    </svg>
+                </div>
+            </div>
+            </div>
+            <div className="review-slider__down">
+            {[
+                {
+                name: "Amelia Joseph",
+                role: "Chief Manager",
+                review:
+                    "My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.",
+                },
+                {
+                name: "Jacob Joshua",
+                role: "HR Manager",
+                review:
+                    "I found the digital expertise I needed. Their creative-professional balance exceeded expectations. Friendly interactions, exceptional outcomes. For digital enchantment, it's got to be Embrace!",
+                },
+            ].map((person, idx) => (
+                <div className="review-slider__down-card__container" key={idx}>
+                <div className="review-slider__down-card__people-info">
+                    <div className="review-slider__down-card__people-info__img">
+                    <Image src={ameliaJosephLogo} alt={person.name} />
+                    </div>
+                    <div className="review-slider__down-card__people-info__name">
+                    <div className="review-slider__down-card__people-info__name-txt">{person.name}</div>
+                    <div className="review-slider__down-card__people-info__work-txt">{person.role}</div>
+                    </div>
+                </div>
+                <div className="review-slider__down-card__people-review">
+                    <p className="review-slider__down-card__people-review">{person.review}</p>
+                </div>
+                </div>
+            ))}
+            </div>
+        </div>
+        </div>
+    </section>
+    );
+};
